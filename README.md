@@ -1,1 +1,1 @@
-Seed project for RequireJS, Jasmine and Karma.
+Demonstrates using AngularJS + RequireJS + Jasmine + Karma.
