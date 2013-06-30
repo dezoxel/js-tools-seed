@@ -1,9 +1,17 @@
 require.config({
-  baseUrl: 'app/js'
+  baseUrl: 'app/js',
+  paths: {
+    'angular': '../../components/angular/angular'
+  },
+  shim: {
+    'angular': {
+      exports: 'angular'
+    },
+  }
 });
 
-require(['my1', 'my2', 'my3'], function(my1, my2, my3) {
-  console.log(my1.sayHi());
-  console.log(my2.sayHi());
-  console.log(my3.sayHi());
+require(['angular', 'app'], function(angular, app) {
+  'use strict';
+
+  angular.bootstrap(document, [app.name]);
 });

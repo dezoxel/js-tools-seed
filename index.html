@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RequireJS + Jasmine + Karma</title>
+  <title>AngularJS + RequireJS + Jasmine + Karma</title>
+  <style>
+    [ng-cloak] {
+      display: none;
+    }
+  </style>
 </head>
-<body>
-  <h1>RequireJS + Jasmine + Karma</h1>
+<body ng-cloak>
+  <h1>AngularJS + RequireJS + Jasmine + Karma</h1>
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
+
+  <div>Angular seed app: v<span app-version></span></div>
+  <div ng-view></div>
+
   <script src="components/requirejs/require.js" data-main="app/js/main.js"></script>
 </body>
 </html>
