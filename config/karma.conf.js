@@ -2,7 +2,7 @@
 
 
 // base path, that will be used to resolve files and exclude
-basePath = '';
+basePath = '../';
 
 
 // list of files / patterns to load in the browser
@@ -13,6 +13,7 @@ files = [
   REQUIRE_ADAPTER,
   {pattern: 'app/js/*.js', included: false},
   {pattern: 'tests/*Spec.js', included: false},
+  {pattern: 'components/**/*.js', included: false},
   'tests/main.js',
 ];
 
